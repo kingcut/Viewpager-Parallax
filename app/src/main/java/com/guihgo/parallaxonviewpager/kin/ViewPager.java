@@ -2345,8 +2345,8 @@ public class ViewPager extends ViewGroup {
         }
         // Don't lose the rounded component
         mLastMotionX += scrollX - (int) scrollX;
-//        scrollTo((int) scrollX, getScrollY());
-//        pageScrolled((int) scrollX);
+        scrollTo((int) scrollX, getScrollY());
+        pageScrolled((int) scrollX);
 
         return needsInvalidate;
     }
