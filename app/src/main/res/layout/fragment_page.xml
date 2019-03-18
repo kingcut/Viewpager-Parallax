@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llBgTela"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingTop="35dp">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:id="@+id/abc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#00FF00"
+            android:id="@+id/llGreenBlock"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"></LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="#0000FF"
+            android:id="@+id/llBlueBlock"
+            android:layout_above="@+id/llGreenBlock"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"></LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#FF0000"
+            android:id="@+id/llRedBlock"
+            android:layout_above="@+id/llGreenBlock"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"></LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgIcon"
+            android:src="@mipmap/ic_launcher"
+            android:layout_above="@+id/llGreenBlock"
+            android:layout_marginBottom="50dp"
+            android:layout_centerHorizontal="true" />
+    </LinearLayout>
+
+
+</RelativeLayout>
